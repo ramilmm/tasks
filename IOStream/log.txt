@@ -1,0 +1,146 @@
+03.11.2015 11:51:10 File fas is deleted!
+03.11.2015 11:51:14 File Новая папка is created!
+03.11.2015 11:51:17 File DIRECT is created!
+03.11.2015 11:51:29 File DIRECT is modified!
+03.11.2015 11:51:32 File DIRECT is modified!
+03.11.2015 11:52:16 File DIRECT is deleted!
+03.11.2015 11:52:20 File Новая папка is created!
+03.11.2015 11:52:23 File DIRECTORY is created!
+03.11.2015 11:52:29 File DIRECTORY is modified!
+03.11.2015 11:52:34 File DIRECTORY is modified!
+10.12.2015 10:39:49 File Новая папка is created!
+10.12.2015 10:40:08 File Новая папка is deleted!
+10.12.2015 10:41:01 File tas.txt is deleted!
+10.12.2015 10:41:01 File DIRECTORY is deleted!
+10.12.2015 10:41:14 File Новая папка is created!
+10.12.2015 10:41:32 File Новая папка is modified!
+10.12.2015 10:41:39 File Новая папка is modified!
+10.12.2015 10:41:54 File Новый текстовый документ.txt is created!
+10.12.2015 10:42:07 File Новая папка is modified!
+10.12.2015 10:42:50 File Новая папка is modified!
+10.12.2015 10:44:09 File Новый текстовый документ.txt is deleted!
+10.12.2015 10:45:00 File Новая папка is deleted!
+10.12.2015 10:45:14 File Новый текстовый документ.txt is created!
+10.12.2015 10:45:20 File Новая папка is created!
+10.12.2015 10:45:27 File Новая папка is modified!
+10.12.2015 10:46:53 File Новый текстовый документ.txt is created!
+10.12.2015 10:47:02 File Новая папка is created!
+10.12.2015 10:50:50 File Новая папка is deleted!
+10.12.2015 10:50:51 File Новый текстовый документ.txt is deleted!
+10.12.2015 10:50:57 File Новый текстовый документ.txt is created!
+10.12.2015 10:51:39 File Новый текстовый документ.txt is deleted!
+10.12.2015 10:51:46 File Новая папка is created!
+10.12.2015 10:52:15 File Новая папка is modified!
+10.12.2015 10:52:21 File Новая папка is modified!
+10.12.2015 10:53:26 File Новая папка is deleted!
+10.12.2015 10:54:42 File Новая папка is created!
+10.12.2015 10:55:20 File Новая папка is deleted!
+10.12.2015 10:57:19 File Новая папка is deleted!
+10.12.2015 10:57:22 File Новая папка is created!
+10.12.2015 10:57:30 File Новая папка is created!
+10.12.2015 10:57:36 File Новая папка is created!
+10.12.2015 10:57:41 File Новый текстовый документ.txt is created!
+10.12.2015 10:57:47 File Новая папка is created!
+10.12.2015 10:57:57 File Новый текстовый документ.txt is created!
+10.12.2015 10:58:42 File Новая папка is deleted!
+10.12.2015 10:58:57 File Новый текстовый документ.txt is created!
+10.12.2015 11:11:38 File Новый текстовый документ.txt is deleted!
+10.12.2015 11:11:42 File Новый текстовый документ.txt is created!
+10.12.2015 11:11:45 File Новый текстовый документ.txt is deleted!
+10.12.2015 11:12:33 File Новый текстовый документ.txt is created!
+10.12.2015 11:13:35 File Новый текстовый документ.txt is deleted!
+10.12.2015 11:15:27 File Новый текстовый документ.txt is deleted!
+10.12.2015 11:15:33 File Новая папка is created!
+10.12.2015 11:15:42 File Новая папка is created!
+10.12.2015 11:15:51 File Новая папка is created!
+10.12.2015 11:15:59 File Новая папка is created!
+10.12.2015 11:16:05 File Документ Microsoft Word.docx is created!
+10.12.2015 11:16:09 File Документ Microsoft Publisher.pub is created!
+10.12.2015 11:16:09 File Документ Microsoft Publisher.pub is modified!
+10.12.2015 11:16:09 File Документ Microsoft Publisher.pub is modified!
+10.12.2015 11:16:18 File Документ Microsoft Publisher (2).pub is created!
+10.12.2015 11:16:18 File Документ Microsoft Publisher (2).pub is modified!
+10.12.2015 11:16:18 File Документ Microsoft Publisher (2).pub is modified!
+10.12.2015 11:16:24 File Новый документ Журнала.jnt is created!
+10.12.2015 11:16:24 File Новый документ Журнала.jnt is modified!
+10.12.2015 11:16:24 File Новый документ Журнала.jnt is modified!
+10.12.2015 11:32:07 File Новая папка is deleted!
+10.12.2015 11:32:13 File Новая папка is created!
+10.12.2015 11:32:13 File Новая папка is created!
+10.12.2015 11:32:20 File Новая папка is created!
+10.12.2015 11:32:20 File Новая папка is created!
+10.12.2015 11:32:20 File Новая папка is modified!
+10.12.2015 11:32:26 File Новый текстовый документ.txt is created!
+10.12.2015 11:32:26 File Новая папка is modified!
+10.12.2015 11:32:31 File Новый текстовый документ.txt is created!
+10.12.2015 11:32:31 File Новая папка is modified!
+10.12.2015 11:32:36 File Новый текстовый документ.txt is created!
+10.12.2015 11:32:48 File Новая папка is modified!
+10.12.2015 11:32:48 File OKOK is created!
+10.12.2015 11:32:56 File Новый текстовый документ (2).txt is created!
+10.12.2015 11:32:56 File OKOK is modified!
+10.12.2015 11:33:02 File Новая папка is created!
+10.12.2015 11:33:02 File Новая папка is created!
+10.12.2015 11:33:02 File OKOK is modified!
+10.12.2015 11:33:21 File OKOK is deleted!
+10.12.2015 11:33:21 File Новая папка is modified!
+10.12.2015 11:33:21 File Новая папка is created!
+10.12.2015 11:33:21 File Новая папка is created!
+10.12.2015 11:33:30 File Новая папка is created!
+10.12.2015 11:33:30 File Новая папка is modified!
+10.12.2015 11:33:30 File Новая папка is created!
+10.12.2015 11:33:34 File Документ Microsoft Word.docx is created!
+10.12.2015 11:33:34 File Новая папка is modified!
+10.12.2015 11:33:43 File Документ Microsoft Word.docx is created!
+13.12.2015 09:13:40 File Документ Microsoft Word.docx is deleted!
+13.12.2015 09:13:40 File Новая папка is deleted!
+13.12.2015 09:13:53 File Новая папка is created!
+13.12.2015 09:13:53 File Новая папка is created!
+13.12.2015 09:14:09 File ModifyPapka is created!
+13.12.2015 09:25:44 File Новая папка is created!
+13.12.2015 09:25:44 File ModifyPapka is modified!
+13.12.2015 09:25:44 File Новая папка is created!
+13.12.2015 09:26:52 File ModifyPapka is deleted!
+13.12.2015 09:26:58 File Документ Microsoft Word.docx is created!
+13.12.2015 09:27:09 File Новая папка is created!
+13.12.2015 09:27:09 File Новая папка is created!
+13.12.2015 09:27:13 File Ko is created!
+13.12.2015 09:27:32 File Новая папка is created!
+13.12.2015 09:27:32 File Ko is modified!
+13.12.2015 09:27:32 File Новая папка is created!
+13.12.2015 09:49:47 File Ko is deleted!
+13.12.2015 09:50:31 File Новая папка is created!
+13.12.2015 09:50:31 File Новая папка is created!
+13.12.2015 09:50:45 File Новая папка is created!
+13.12.2015 09:50:45 File Новая папка is created!
+13.12.2015 09:51:05 
+13.12.2015 09:52:23 File Новая папка is created!
+13.12.2015 09:52:23 File Новая папка is created!
+13.12.2015 09:52:54 File Новая папка is created!
+13.12.2015 09:52:54 File Новая папка is created!
+13.12.2015 09:52:54 File Новая папка is modified!
+13.12.2015 09:53:28 File Новая папка is created!
+13.12.2015 09:53:28 File Новая папка is modified!
+13.12.2015 09:53:28 File Новая папка is created!
+13.12.2015 09:53:49 File Новый документ Журнала.jnt is created!
+13.12.2015 09:53:49 File Новая папка is modified!
+13.12.2015 09:53:49 File Новый документ Журнала.jnt is modified!
+13.12.2015 09:53:49 File Новый документ Журнала.jnt is modified!
+13.12.2015 09:53:55 File Microsoft Access База данных.accdb is created!
+13.12.2015 09:53:55 File Новая папка is modified!
+13.12.2015 09:53:55 File Microsoft Access База данных.accdb is modified!
+13.12.2015 09:53:55 File Microsoft Access База данных.accdb is modified!
+13.12.2015 09:54:00 File Новый документ Журнала.jnt is created!
+13.12.2015 09:54:00 File Новая папка is modified!
+13.12.2015 09:54:00 File Новый документ Журнала.jnt is modified!
+13.12.2015 09:54:00 File Новый документ Журнала.jnt is modified!
+13.12.2015 09:54:05 File Архив WinRAR.rar is created!
+13.12.2015 09:54:05 File Архив WinRAR.rar is modified!
+13.12.2015 09:54:05 File Архив WinRAR.rar is modified!
+13.12.2015 09:54:12 File Новый текстовый документ.txt is created!
+13.12.2015 09:54:26 File Новый текстовый документ (2).txt is created!
+13.12.2015 09:55:18 File hjh.txt is created!
+13.12.2015 09:56:50 File hjh.txt is deleted!
+13.12.2015 09:56:50 File Архив WinRAR.rar is deleted!
+13.12.2015 09:56:50 File Новый текстовый документ.txt is deleted!
+13.12.2015 09:56:59 File Презентация Microsoft PowerPoint.pptx is created!

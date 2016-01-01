@@ -1,0 +1,6 @@
+09.11.2015 06:05:32 client1: asfas
+09.11.2015 06:05:34 client2: asfasfas
+09.11.2015 06:05:36 client1: asfas
+09.11.2015 06:05:38 client2: afasf
+09.11.2015 06:05:40 client1: afas
+10.11.2015 11:16:35 client2: privet

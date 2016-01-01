@@ -1,0 +1,7 @@
+@JSONable-если нет над классом возвращать пустую строку
+@JSONignore-игнорить помеченные поля
+@JSONname("param")-переменовывать поля
+    String p1()-> param
+@DateFormat("yyyy.MM")
+    Date now
+@Target почитать

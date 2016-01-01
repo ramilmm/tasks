@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="currency2" basedir="." default="package">
+    <property name="src.dir" value="src" />
+    <property name="build.dir" value="bin"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="src-test.dir" value="src-test" />
+    <property name="build.dir" value="bin"/>
+    <property name="lib-test.dir" value="lib-test"/>
+
+    <property name="java.release" value="1.8"/>
+    <property name="encoding" value="UTF-8"/>
+
+    <path id="main-classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement location="${build.dir}" />
+    </path>
+
+    <target name="copy-resources">
+        <copy todir="${build.dir}">
+            <fileset dir="${src.dir}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile" depends="copy-resources">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="src" destdir="bin"
+               source="${java.release}" target="${java.release}" encoding="${encoding}" debug="true"
+               classpathref="main-classpath" />
+    </target>
+
+    <target name="package" depends="compile, copy-resources">
+        <jar basedir="${build.dir}" destfile="${ant.project.name}.jar" />
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete file="${ant.project.name}.jar" />
+    </target>
+
+    <target name="rebuild" depends="clean, package" />
+
+    <target name="run" depends="compile">
+        <java classname="com.fujitsu.fs.javalab.currency.Currency" fork="true"
+              classpathref="main-classpath" />
+    </target>
+
+</project>

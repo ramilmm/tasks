@@ -1,0 +1,36 @@
+.container .row{
+    margin-top: 50px;
+}
+.slider-text {
+    color: #ffffff;
+    text-align: center;
+    font-family:cursive, Helvetica, sans-serif;
+    font-size:30px;
+
+    /* ‘ÓÌ */
+    background-color:rgba(0,0,0,.4);
+    padding:10px 30px;
+}
+#carousel{
+    margin-left: 50px;
+    width: 550px;
+    height: 550px;
+}
+.modal-body .pull-left{
+    padding-left: 1em;
+}
+.modal-body .pull-right{
+    padding-right: 1em;
+}
+.modal-footer {
+    clear: both;
+}
+#img1 {
+    float: left;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+#p1 {
+    float: right;
+    overflow: hidden;
+}

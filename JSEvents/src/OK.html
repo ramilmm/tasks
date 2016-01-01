@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery-1.11.3.js"></script>
+</head>
+<body>
+<div class="js_test" id="div1">
+    <p>div1</p>
+
+    <div class="js_test" id="div2">
+        <p>div2</p>
+
+        <div class="js_test" id="div3">
+        <p>div3</p>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.js_test', function () {
+//            if(this.parent != null){
+//            $(this).css('background-color', 'inherit');
+            var a = 0;
+            a +=100;
+            $(this).css('background-color','rgb('+a+','+a+','+a+')');
+            $(this).children().trigger('click');
+            return false;
+//            }
+        });
+    });
+</script>
+</body>
+</html>

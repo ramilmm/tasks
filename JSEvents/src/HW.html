@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="HWSTYLE.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("[title='/url']").replaceWith(function () {
+                var url = $(this).prop('title');
+                var href = "href=" + "\"" + url + "\"";
+                var id = "id=" + "\"" + $(this).prop('id') + "\"";
+                var clas = "class=" + "\"";
+                var content = $(this).text();
+                $(this).removeClass("must_be_href");
+                return "<a " + href + id + clas + $(this).prop('class') + "\"" + ">" + content + "</a>";
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <form>
+        <h3>DOUBLER</h3>
+        <input type="text" placeholder="Write word" onkeyup="doubler(this)" id="input">
+    </form>
+</div>
+<hr>
+<div>
+    <form>
+        <h3>Hidden input</h3>
+        <input type="text" placeholder="Focus on me" id="hideMe" onfocus="hide(this)" onblur="display(this)"
+               style="opacity: 1">
+    </form>
+</div>
+<hr>
+<div>
+    <h3>Checkboxes</h3>
+
+    <form id="check">
+        <input type="checkbox" onclick="check(this)"><label>1</label>
+        <input type="checkbox" onclick="check(this)"><label>2</label>
+        <input type="checkbox" onclick="check(this)"><label>3</label>
+        <input type="checkbox" onclick="check(this)"><label>4</label>
+        <input type="checkbox" onclick="check(this)"><label>5</label>
+        <input type="checkbox" onclick="check(this)"><label>6</label>
+        <input type="checkbox" onclick="check(this)"><label>7</label>
+        <input type="checkbox" onclick="check(this)"><label>8</label>
+        <input type="checkbox" onclick="check(this)"><label>9</label>
+        <input type="checkbox" onclick="check(this)"><label>10</label>
+    </form>
+</div>
+<hr>
+<div style="width: 1350px; height: 350px; text-align: center" onmousedown="return false" onclick="return false">
+    <h3>Uncopyable text</h3>
+    <br>
+
+    <p>
+        Равным образом начало повседневной работы по формированию позиции позволяет оценить значение форм развития.
+        Товарищи! реализация намеченных плановых заданий позволяет оценить значение соответствующий условий активизации.
+        Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и
+        модернизации систем массового участия. Идейные соображения высшего порядка, а также сложившаяся структура
+        организации в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в
+        особенности же консультация с широким активом позволяет выполнять важные задания по разработке дальнейших
+        направлений развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское
+        обеспечение нашей деятельности требуют от нас анализа направлений прогрессивного развития.
+        Не следует, однако забывать, что консультация с широким активом требуют от нас анализа позиций, занимаемых
+        участниками в отношении поставленных задач. Задача организации, в особенности же сложившаяся структура
+        организации в значительной степени обуславливает создание системы обучения кадров, соответствует насущным
+        потребностям. Равным образом укрепление и развитие структуры в значительной степени обуславливает создание
+        направлений прогрессивного развития. Товарищи! постоянный количественный рост и сфера нашей активности позволяет
+        оценить значение дальнейших направлений развития.
+        Товарищи! реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в
+        формировании дальнейших направлений развития. Таким образом постоянный количественный рост и сфера нашей
+        активности способствует подготовки и реализации систем массового участия. Задача организации, в особенности же
+        рамки и место обучения кадров играет важную роль в формировании систем массового участия. Повседневная практика
+        показывает, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и
+        модернизации модели развития. Задача организации, в особенности же дальнейшее развитие различных форм
+        деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным
+        потребностям. Товарищи! сложившаяся структура организации позволяет оценить значение системы обучения кадров,
+        соответствует насущным потребностям.
+    </p>
+</div>
+<hr>
+<div>
+    <h3>Never dissatisfied with salary</h3>
+
+    <form>
+        <h4>Вы довольны своей зарплатой?<i>Только честно!</i></h4><br>
+        <input type="button" value="Да,конечно" onclick="alert('Молодец!Тогда мы урежем твою зарплату еще на 10%')">
+        <input type="button" value="Нет!!!!!!!!!!!" id="btn" class="mybutton"
+               style="position: absolute; transition: all 0.2s linear 0s;"
+               onclick="alert('Мы всё равно не повысим тебе зарплату)')">
+    </form>
+</div>
+<hr>
+<div>
+    <h3>Length of text</h3>
+    <span id="span">
+        TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE55555EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEXT.<br>
+    </span>
+
+    <p id="counter"></p>
+</div>
+<hr>
+<div id="Link">
+    <div>
+        <h3>Link</h3>
+        <i title="/url" class="must_be_href new_class" id="89">link</i>
+    </div>
+</div>
+
+
+<script src="HWJS.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="PhoneBookJSP:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/PhoneBookJSP_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="PhoneBookJSP/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="PhoneBookJSP" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

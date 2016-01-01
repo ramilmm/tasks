@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" onkeyup="checker(this)" onblur="checkLength(this)" placeholder="set your number" maxlength="11">-->
+<!--<input type="text" onblur="checkEmail(this)" placeholder="Email">-->
+<!--<input type="text" onblur="checkName(this)" placeholder="FIO">-->
+
+<a href="http://google.com" id="google">Google</a><br>
+<a href="form.js" id="form">Form.js</a><br>
+<script src="form.js" ></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function () {
+                $(document).on('click','form', function () {
+                    $(this).css('color','black');
+                })
+            }
+    )
+</script>
+</body>
+</html>
