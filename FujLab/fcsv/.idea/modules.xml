@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fcsv-cli/fcsv-cli.iml" filepath="$PROJECT_DIR$/fcsv-cli/fcsv-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fcsv-parser/fcsv-parser.iml" filepath="$PROJECT_DIR$/fcsv-parser/fcsv-parser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parser.iml" filepath="$PROJECT_DIR$/parser.iml" />
+    </modules>
+  </component>
+</project>

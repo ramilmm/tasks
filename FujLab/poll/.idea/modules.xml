@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/poll.iml" filepath="$PROJECT_DIR$/poll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poll-cli/poll-cli.iml" filepath="$PROJECT_DIR$/poll-cli/poll-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poll-dao/poll-dao.iml" filepath="$PROJECT_DIR$/poll-dao/poll-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poll-model/poll-dao.iml" filepath="$PROJECT_DIR$/poll-model/poll-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poll-model/poll-model.iml" filepath="$PROJECT_DIR$/poll-model/poll-model.iml" />
+    </modules>
+  </component>
+</project>
