@@ -9,13 +9,19 @@
 
     <name>Poll CLI</name>
 
+    <description>
+        The command line interface for the Poll
+    </description>
+
     <packaging>jar</packaging>
+
     <parent>
         <groupId>com.fujitsu.fs.javalab.poll</groupId>
         <artifactId>poll</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
     <dependencies>
         <dependency>
             <groupId>org.hsqldb</groupId>
@@ -23,4 +29,5 @@
             <version>2.3.3</version>
         </dependency>
     </dependencies>
+
 </project>

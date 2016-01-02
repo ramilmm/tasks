@@ -2,143 +2,137 @@ package com.fujitsu.fs.javalab.poll.cli;
 
 import java.sql.*;
 import java.util.Arrays;
+import java.util.EmptyStackException;
 
 public class PollCLI {
+
     public static void main(String[] args) throws SQLException {
-        String url = "jdbc:hsqldb:file:c:/tmp/Java/poll";
-        try (Connection conn = DriverManager.getConnection(url, "sa", "")) {
-            loadDemoData(conn);
-//            loadDemoData2(conn);
-//            loadDemoData3(conn);
-            count(conn);
+        String url = "jdbc:hsqldb:file:c:/tmp/jdbc/polldb/poll";
+
+        try (Connection conn = DriverManager.getConnection(url, "SA", "")) {
             list(conn);
         }
     }
 
     protected static void loadDemoData(Connection conn) throws SQLException {
-        final String sql = "INSERT INTO POLL VALUES" +
+        final String sql = "INSERT INTO POLL VALUES " +
                 "(1, 'Java Core', NULL)," +
-                "(2,'Logging','slf4j,log4j')," +
-                "(3,'JDBC', NULL );";
-        try (Statement statement = conn.createStatement()) {
-            int rowsUpdater = statement.executeUpdate(sql);
-            System.out.println("Updated " + rowsUpdater + " rows");
+                "(2, 'Logging', 'slf4j, log4j')," +
+                "(3, 'JDBC', NULL);";
+        try (Statement stmt = conn.createStatement()) {
+            int rowsUpdated = stmt.executeUpdate(sql);
+            System.out.println("Updated " + rowsUpdated + " rows");
         }
     }
 
     protected static void loadDemoData2(Connection conn) throws SQLException {
-        final String sql = "INSERT INTO POLL VALUES (?,?,?);";
-        try (PreparedStatement statement = conn.prepareStatement(sql)) {
-            statement.setLong(1, 4);
-            statement.setString(2, "IO");
-            statement.setString(3, null);
-            statement.executeUpdate();
+        final String sql = "INSERT INTO POLL VALUES (?, ?, ?)";
 
-            statement.setLong(1, 5);
-            statement.setString(2, "Maven");
-            statement.setString(3, "Single module projects");
-            statement.executeUpdate();
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setLong(1, 4);
+            pstmt.setString(2, "IO");
+            pstmt.setString(3, null);
+            pstmt.executeUpdate();
+
+            pstmt.setLong(1, 5);
+            pstmt.setString(2, "Maven");
+            pstmt.setString(3, "Single module projects");
+            pstmt.executeUpdate();
         }
     }
 
     protected static void loadDemoData3(Connection conn) throws SQLException {
-        final String sql = "INSERT INTO POLL VALUES (?,?,?);";
+        final String sql = "INSERT INTO POLL VALUES (?, ?, ?)";
 
-        boolean oldAutoConf = conn.getAutoCommit();
+        boolean oldAutoCommit = conn.getAutoCommit();
         conn.setAutoCommit(false);
-        PreparedStatement statement = null;
+        PreparedStatement pstmt = null;
         try {
-            statement = conn.prepareStatement(sql);
-            statement.setLong(1, 4);
-            statement.setString(2, "Ant");
-            statement.setString(3, null);
-            statement.executeUpdate();
-            statement.addBatch();
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setLong(1, 6);
+            pstmt.setString(2, "Ant");
+            pstmt.setString(3, null);
+            pstmt.addBatch();
 
-            statement.setLong(1, 5);
-            statement.setString(2, "JDBC");
-            statement.setString(3, null);
-            statement.executeUpdate();
-            statement.addBatch();
+            pstmt.setLong(1, 7);
+            pstmt.setString(2, "JDBC");
+            pstmt.setString(3, "Transactions");
+            pstmt.addBatch();
 
-            int[] res = statement.executeBatch();
+            int[] res = pstmt.executeBatch();
             System.out.println("Inserted " + Arrays.stream(res).sum() + " records");
         } finally {
-            if (statement != null) {
+            if (pstmt != null) {
                 try {
-                    statement.close();
+                    pstmt.close();
                 } catch (Exception ignored) {
                 }
             }
-            conn.setAutoCommit(oldAutoConf);
+            conn.setAutoCommit(oldAutoCommit);
         }
-
     }
-
 
     protected static void list(Connection conn) throws SQLException {
-        final String sql = "SELECT ID,TITLE, DESCRIPTION FROM POLL";
-        try (Statement statement = conn.createStatement()) {
-            ResultSet rs = statement.executeQuery(sql);
+        final String sql = "SELECT ID, TITLE, DESCRIPTION FROM POLL";
+        try (Statement stmt = conn.createStatement()) {
+            ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 Long id = rs.getLong("ID");
-                String tittle = rs.getString("TITLE");
+                String title = rs.getString("TITLE");
                 String description = rs.getString("DESCRIPTION");
-                System.out.println(id + " | " + tittle + " | " + description);
+                System.out.printf("%2d | %-18s | %-30s\n", id, title, description);
             }
         }
     }
-
-
-    protected static void updateRS(Connection conn) throws SQLException {
-        final String sql = "SELECT ID,TITLE, DESCRIPTION FROM POLL WHERE ID = 1";
-        try (Statement statement = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE)) {
-            ResultSet rs = statement.executeQuery(sql);
-            if(rs.next()) {
-                rs.updateString("DESCRIPTION","AZAZAZAZAAZ");
-                rs.updateRow();
-            }else{
-                //throw exception
-            }
-        }
-    }
-
 
     protected static void count(Connection conn) throws SQLException {
         final String sql = "SELECT COUNT(*) FROM POLL";
-        try (Statement statement = conn.createStatement()) {
-            ResultSet rs = statement.executeQuery(sql);
+        try (Statement stmt = conn.createStatement()) {
+            ResultSet rs = stmt.executeQuery(sql);
             if (rs.next()) {
                 Long count = rs.getLong(1);
                 System.out.println("Count is " + count);
             } else {
-                //throw exeption
+                throw new EmptyStackException();
             }
         }
     }
 
-    protected static void loadDemoData5(Connection conn) throws SQLException {
-        final String sql = "INSERT INTO POLL_CHOICE(ID,CHOICE_TEXT,VOTES, POLL_ID) VALUES (DEFAULT , ?, 0, ?);";
+    protected static void updateRS(Connection conn) throws SQLException {
+        final String sql = "SELECT ID, TITLE, DESCRIPTION FROM POLL WHERE ID=1";
+        try (Statement stmt = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY,
+                ResultSet.CONCUR_UPDATABLE)) {
+            ResultSet rs = stmt.executeQuery(sql);
+            if (rs.next()) {
+                rs.updateString("DESCRIPTION", "Понравилось ли вам занятие?");
+                rs.updateRow();
+            } else {
+                throw new EmptyStackException();
+            }
+        }
+    }
 
-        try(PreparedStatement statement = conn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS)) {
-            statement.setString(1, "Da");
-            statement.setLong(2, 1);
-            statement.executeUpdate();
+    protected static void getAutoGenerated(Connection conn) throws SQLException {
+        final String sql = "INSERT INTO POLL_CHOICE(ID,CHOICE_TEXT, VOTES, POLL_ID) " +
+                "VALUES (DEFAULT, ?, 0, ?)";
 
+        try (PreparedStatement pstmt = conn.prepareStatement(sql,
+                Statement.RETURN_GENERATED_KEYS)) {
+            pstmt.setString(1, "Да");
+            pstmt.setLong(2, 1);
+            pstmt.executeUpdate();
 
-            ResultSet rs = statement.getGeneratedKeys();
+            ResultSet rs = pstmt.getGeneratedKeys();
             rs.next();
             System.out.println("Inserted row with ID " + rs.getLong(1));
 
-            statement.setString(1, "Net");
-            statement.setLong(2, 1);
-            statement.executeUpdate();
+            pstmt.setString(1, "Нет");
+            pstmt.setLong(2, 1);
+            pstmt.executeUpdate();
 
-
-            rs = statement.getGeneratedKeys();
+            rs = pstmt.getGeneratedKeys();
             rs.next();
             System.out.println("Inserted row with ID " + rs.getLong(1));
-
         }
     }
 

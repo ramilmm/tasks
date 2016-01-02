@@ -19,19 +19,21 @@
       </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="poll-cli" />
+        <module name="poll-dao" />
+        <module name="poll-db" />
+        <module name="poll-model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DAO" target="1.5" />
-      <module name="poll" target="1.5" />
-      <module name="poll-cli" target="1.5" />
-      <module name="poll-dao" target="1.5" />
-      <module name="poll-model" target="1.5" />
-      <module name="poll-model (1)" target="1.5" />
+      <module name="poll" target="1.8" />
+      <module name="poll-cli" target="1.8" />
+      <module name="poll-dao" target="1.8" />
+      <module name="poll-db" target="1.8" />
+      <module name="poll-model" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

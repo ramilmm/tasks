@@ -3,15 +3,11 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fujitsu.fs.javalab.poll.model</groupId>
-    <artifactId>poll-model</artifactId>
+    <groupId>com.fujitsu.fs.javalab.poll.db</groupId>
+    <artifactId>poll-db</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Poll Model</name>
-
-    <description>
-        The domain mode
-    </description>
+    <name>Poll DB</name>
 
     <parent>
         <groupId>com.fujitsu.fs.javalab.poll</groupId>

@@ -3,34 +3,86 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fujitsu.javalab.poll</groupId>
+    <groupId>com.fujitsu.fs.javalab.poll</groupId>
     <artifactId>poll</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Poll</name>
 
     <packaging>pom</packaging>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.taget>1.8</maven.compiler.taget>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
     <modules>
-        <module>poll-cli</module>
         <module>poll-model</module>
+        <module>poll-db</module>
         <module>poll-dao</module>
+        <module>poll-cli</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+
+            <!--
+            - Our Modules
+            -->
+            <dependency>
+                <groupId>com.fujitsu.fs.javalab.poll.model</groupId>
+                <artifactId>poll-model</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fujitsu.fs.javalab.poll.dao</groupId>
+                <artifactId>poll-dao</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fujitsu.fs.javalab.poll.db</groupId>
+                <artifactId>poll-db</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.4</version>
+            </dependency>
+
+            <!--
+            - JDBC
+            -->
+
             <dependency>
                 <groupId>org.hsqldb</groupId>
                 <artifactId>hsqldb</artifactId>
                 <version>2.3.3</version>
             </dependency>
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>sqltool</artifactId>
+                <version>2.3.3</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>2.4.3</version>
+            </dependency>
+
+            <!--
+            - Test
+            -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
-
-
     </dependencyManagement>
 
 </project>
